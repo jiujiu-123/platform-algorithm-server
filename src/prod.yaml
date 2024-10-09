@@ -1,0 +1,17 @@
+APPLICATION:
+  HOST: localhost
+  PORT: 8000
+
+MYSQL:
+  HOST: localhost
+  PORT: 3306
+  USERNAME: root
+  PASSWORD: 123123
+  DATABASE: 'platform_algorithm'
+  LOGGING: true
+  SYNCHRONIZE: false
+
+REDIS:
+  HOST: localhost
+  PORT: 6379
+  DATABASE: 0
