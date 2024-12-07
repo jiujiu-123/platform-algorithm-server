@@ -3,15 +3,15 @@ APPLICATION:
   PORT: 8000
 
 MYSQL:
-  HOST: localhost
+  HOST: mysql-container
   PORT: 3306
   USERNAME: root
   PASSWORD: '123456'
-  DATABASE: 'platform_algorithm'
+  DATABASE: platform_algorithm
   LOGGING: false
   SYNCHRONIZE: false
 
 REDIS:
-  HOST: localhost
+  HOST: redis-container
   PORT: 6379
   DATABASE: 0

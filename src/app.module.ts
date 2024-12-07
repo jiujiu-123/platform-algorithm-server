@@ -8,7 +8,7 @@ import {MaterialModule} from './Modules/material/material.module';
 import {APP_FILTER, APP_INTERCEPTOR} from '@nestjs/core';
 import {ResponseInterceptor} from './Interceptor/response.interceptor';
 import {CanvasModule} from './Modules/canvas/canvas.module';
-import {LoggerModule} from './logger/logger.module';
+import {LoggerModule} from './Logger/logger.module';
 import {format, transports} from 'winston';
 import * as chalk from 'chalk';
 import {HttpExceptionFilter} from './Filter/http.exception';
@@ -21,7 +21,7 @@ import {HttpExceptionFilter} from './Filter/http.exception';
     MaterialModule,
     CanvasModule,
     LoggerModule,
-    LoggerModule.forRoot({
+    LoggerModule.forRootAsync({
       level: 'debug',
       format: format.combine(format.colorize(), format.simple()),
       transports: [

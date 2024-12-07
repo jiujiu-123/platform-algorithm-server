@@ -6,7 +6,8 @@
     "deleteOutDir": true,
     "watchAssets": true,
     "assets": [
-      "**/*.yaml"
+      "**/*.yaml",
+      ".env-migration"
     ]
   }
 }

@@ -5,7 +5,7 @@ export const WINSTON_LOGGER_TOKEN = 'WINSTON_LOGGER';
 @Global()
 @Module({})
 export class LoggerModule {
-  public static forRoot(options: LoggerOptions): DynamicModule {
+  public static forRootAsync(options: LoggerOptions): DynamicModule {
     return {
       module: LoggerModule,
       providers: [
